@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPARK — Privacy Policy</title>
+  <meta name="description" content="Privacy policy for SPARK — hyper-casual neon puzzle game. AdMob, RevenueCat, local storage disclosures.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0A0A1A;
+      --surface: #13132B;
+      --text: #E6E6F0;
+      --muted: #9394B5;
+      --accent: #00F0FF;
+      --link: #FF00AA;
+      --border: #26264A;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 40px;
+    }
+    h1 {
+      color: var(--accent);
+      font-size: 32px;
+      margin: 0 0 8px;
+      letter-spacing: 1px;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 32px;
+    }
+    h2 {
+      color: var(--accent);
+      font-size: 22px;
+      margin: 40px 0 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    h3 {
+      color: var(--text);
+      font-size: 17px;
+      margin: 24px 0 8px;
+    }
+    p, li {
+      color: var(--text);
+      font-size: 15px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      justify-content: flex-end;
+      margin-bottom: 16px;
+    }
+    .lang-switch button {
+      background: transparent;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .lang-switch button.active {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+    section[data-lang] {
+      display: none;
+    }
+    section[data-lang].active {
+      display: block;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="lang-switch">
+      <button type="button" data-set-lang="en" class="active">EN</button>
+      <button type="button" data-set-lang="tr">TR</button>
+    </div>
+
+    <!-- ENGLISH -->
+    <section data-lang="en" class="active">
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective date: 2026-07-16 &middot; SPARK by EvinWare</p>
+
+      <p>
+        This privacy policy describes how SPARK (the "Game"), developed by EvinWare
+        (Hasan Evin), handles information when you play. We designed SPARK to collect
+        as little as possible. We do not require an account, do not ask for your
+        name, e-mail, phone, contacts, photos, or location.
+      </p>
+
+      <h2>1. Information We Handle</h2>
+
+      <h3>1.1 Data stored on your device only</h3>
+      <ul>
+        <li><strong>Game progress</strong> — the levels you have completed, stars earned, best scores, and audio/haptics preferences. Stored via Capacitor Preferences (Android SharedPreferences). Never uploaded to our servers.</li>
+        <li><strong>Purchase state</strong> — whether you own the "Remove Ads" one-time in-app purchase. Managed locally and by the store (Google Play Billing).</li>
+      </ul>
+
+      <h3>1.2 Data collected by third parties</h3>
+      <p>SPARK includes third-party SDKs that may collect identifiers to serve ads and process purchases:</p>
+      <ul>
+        <li><strong>Google AdMob</strong> — shows banner, interstitial, and rewarded video ads. AdMob may collect the Android Advertising ID (AAID), IP address, coarse device information, and interaction data to personalize and measure ads. If you own "Remove Ads", no ads are shown and no ad requests are sent. See <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Ads Privacy</a>.</li>
+        <li><strong>RevenueCat</strong> — processes in-app purchases and entitlement checks. RevenueCat receives an anonymous user ID and purchase receipts. See <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.</li>
+        <li><strong>Google Play Billing</strong> — Google processes the actual payment. We never see your card details. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</li>
+      </ul>
+
+      <h2>2. How We Use Information</h2>
+      <ul>
+        <li>To save your progress locally so you can pick up where you left off.</li>
+        <li>To show ads that help keep the game free (via AdMob).</li>
+        <li>To validate and restore in-app purchases (via RevenueCat and Google Play).</li>
+      </ul>
+      <p>We do not sell your data. We do not build advertising profiles. We do not track you outside the Game.</p>
+
+      <h2>3. Children</h2>
+      <p>SPARK is designed for a general audience and is rated by IARC content rating. If you are under the age of 13 (or the applicable age in your country), please play only with a parent or guardian's permission. Ads served by AdMob may be tagged as directed at children where applicable; we do not knowingly collect personal information from children.</p>
+
+      <h2>4. Permissions</h2>
+      <p>SPARK requests only the permissions needed to run:</p>
+      <ul>
+        <li><code>INTERNET</code> — for ads and in-app purchases.</li>
+        <li><code>ACCESS_NETWORK_STATE</code> — to detect connectivity for ad requests.</li>
+        <li><code>AD_ID</code> (Android 13+) — required by AdMob to access the advertising identifier. You can reset or opt out via <em>Settings &rarr; Privacy &rarr; Ads</em> on your device.</li>
+      </ul>
+
+      <h2>5. Your Choices</h2>
+      <ul>
+        <li><strong>Opt out of personalized ads:</strong> Android <em>Settings &rarr; Privacy &rarr; Ads</em> &rarr; "Opt out of Ads Personalization" or "Delete advertising ID".</li>
+        <li><strong>Remove all ads permanently:</strong> Purchase the "Remove Ads" item inside the Game (Settings &rarr; Shop).</li>
+        <li><strong>Reset your progress:</strong> Settings &rarr; Reset. This clears the local save; it does not affect purchases (use "Restore" to bring them back).</li>
+        <li><strong>Uninstall:</strong> Removes all locally stored data. Purchase records remain in your Google account and can be restored on any future install.</li>
+      </ul>
+
+      <h2>6. Data Retention</h2>
+      <p>Local progress is retained until you reset it or uninstall the Game. We (EvinWare) do not retain any personal data on our own servers — we do not operate any server that stores player data. Third parties retain data per their own policies (linked above).</p>
+
+      <h2>7. Changes to This Policy</h2>
+      <p>We may update this policy as the Game evolves. Material changes will be announced in the Game update notes. Continued use after an update means you accept the updated policy.</p>
+
+      <h2>8. Contact</h2>
+      <p>Questions or requests? Email <a href="mailto:info@evinware.com">info@evinware.com</a>.</p>
+    </section>
+
+    <!-- TÜRKÇE -->
+    <section data-lang="tr">
+      <h1>Gizlilik Politikası</h1>
+      <p class="meta">Yürürlük tarihi: 16.07.2026 &middot; SPARK — EvinWare</p>
+
+      <p>
+        Bu politika, EvinWare (Hasan Evin) tarafından geliştirilen SPARK ("Oyun")
+        oyunun bilgilerinizi nasıl işlediğini açıklar. SPARK'ı olabildiğince az
+        veri toplayacak şekilde tasarladık. Hesap açmanızı istemiyoruz; ad, e-posta,
+        telefon, rehber, fotoğraf veya konum bilgisi istemiyoruz.
+      </p>
+
+      <h2>1. İşlenen Bilgiler</h2>
+
+      <h3>1.1 Yalnız cihazınızda saklanan veriler</h3>
+      <ul>
+        <li><strong>Oyun ilerlemesi</strong> — tamamladığınız seviyeler, kazandığınız yıldızlar, en iyi skorlar, ses/dokunsal tercihler. Capacitor Preferences (Android SharedPreferences) üzerinden yerelde tutulur. Bizim sunucularımıza yüklenmez.</li>
+        <li><strong>Satın alma durumu</strong> — "Reklamları Kaldır" tek seferlik satın almasına sahip olup olmadığınız. Cihazda ve mağazada (Google Play Faturalandırma) yönetilir.</li>
+      </ul>
+
+      <h3>1.2 Üçüncü tarafların topladığı veriler</h3>
+      <p>SPARK, reklam gösterimi ve satın alma işlemleri için üçüncü taraf SDK'ler içerir:</p>
+      <ul>
+        <li><strong>Google AdMob</strong> — banner, geçiş ve ödüllü video reklamlar. AdMob reklam gösterimi ve ölçümü için Android Reklam Kimliği (AAID), IP adresi, kaba cihaz bilgisi ve etkileşim verisi toplayabilir. "Reklamları Kaldır" satın alındıysa reklam gösterilmez, reklam isteği gönderilmez. Bkz: <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Reklam Gizliliği</a>.</li>
+        <li><strong>RevenueCat</strong> — uygulama içi satın almaları ve entitlement doğrulamayı işler. RevenueCat anonim bir kullanıcı ID'si ve satın alma makbuzu alır. Bkz: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Gizlilik Politikası</a>.</li>
+        <li><strong>Google Play Faturalandırma</strong> — asıl ödemeyi Google işler. Kart bilgilerinizi biz görmüyoruz. Bkz: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası</a>.</li>
+      </ul>
+
+      <h2>2. Bilgileri Nasıl Kullanıyoruz</h2>
+      <ul>
+        <li>İlerlemenizi yerelde saklayıp kaldığınız yerden devam edebilmeniz için.</li>
+        <li>Oyunun ücretsiz kalmasını sağlayan reklamları göstermek için (AdMob).</li>
+        <li>Uygulama içi satın almaları doğrulamak ve geri yüklemek için (RevenueCat + Google Play).</li>
+      </ul>
+      <p>Verilerinizi satmıyoruz. Reklam profili oluşturmuyoruz. Sizi Oyun dışında takip etmiyoruz.</p>
+
+      <h2>3. Çocuklar</h2>
+      <p>SPARK genel kitleye yönelik tasarlandı ve IARC içerik derecelendirmesine tâbidir. 13 yaşın (veya ülkenizdeki geçerli yaşın) altındaysanız Oyun'u yalnız ebeveyn/veli izniyle oynayın. AdMob'un çocuklara yönelik reklamları için etiketleme desteklenir; bilerek çocuklardan kişisel bilgi toplamıyoruz.</p>
+
+      <h2>4. İzinler</h2>
+      <p>SPARK yalnız çalışması için gereken izinleri talep eder:</p>
+      <ul>
+        <li><code>INTERNET</code> — reklamlar ve uygulama içi satın almalar için.</li>
+        <li><code>ACCESS_NETWORK_STATE</code> — reklam isteği öncesi bağlantı kontrolü için.</li>
+        <li><code>AD_ID</code> (Android 13+) — AdMob'un reklam kimliğine erişmesi için gerekli. Cihazda <em>Ayarlar &rarr; Gizlilik &rarr; Reklamlar</em>'dan sıfırlayabilir veya devre dışı bırakabilirsiniz.</li>
+      </ul>
+
+      <h2>5. Tercihleriniz</h2>
+      <ul>
+        <li><strong>Kişiselleştirilmiş reklamları devre dışı bırakma:</strong> Android <em>Ayarlar &rarr; Gizlilik &rarr; Reklamlar</em> &rarr; "Reklam kişiselleştirmesini devre dışı bırak" veya "Reklam kimliğini sil".</li>
+        <li><strong>Tüm reklamları kalıcı kaldırma:</strong> Oyun içi "Reklamları Kaldır" satın almasını edinin (Ayarlar &rarr; Mağaza).</li>
+        <li><strong>İlerlemeyi sıfırlama:</strong> Ayarlar &rarr; Sıfırla. Yerel kayıt silinir; satın almalar etkilenmez ("Geri Yükle" ile döner).</li>
+        <li><strong>Kaldırma:</strong> Yerel veriler tamamen silinir. Satın alma kayıtları Google hesabınızda kalır ve gelecekte tekrar kurulduğunda geri yüklenebilir.</li>
+      </ul>
+
+      <h2>6. Veri Saklama</h2>
+      <p>Yerel ilerleme, siz sıfırlayana veya Oyun'u kaldırana kadar saklanır. Biz (EvinWare) kendi sunucularımızda hiçbir kişisel veri saklamıyoruz — oyuncu verisi tutan hiçbir sunucumuz yok. Üçüncü taraflar veriyi kendi politikalarına göre saklar (yukarıda bağlantılı).</p>
+
+      <h2>7. Politikadaki Değişiklikler</h2>
+      <p>Oyun geliştikçe bu politikayı güncelleyebiliriz. Önemli değişiklikler Oyun güncelleme notlarında duyurulur. Güncelleme sonrası kullanıma devam etmeniz güncellenen politikayı kabul ettiğiniz anlamına gelir.</p>
+
+      <h2>8. İletişim</h2>
+      <p>Soru veya talepler için: <a href="mailto:info@evinware.com">info@evinware.com</a>.</p>
+    </section>
+
+    <footer>
+      &copy; 2026 EvinWare &middot; SPARK &middot; <a href="mailto:info@evinware.com">info@evinware.com</a>
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      const buttons = document.querySelectorAll('[data-set-lang]');
+      const sections = document.querySelectorAll('section[data-lang]');
+      function setLang(lang) {
+        buttons.forEach(b => b.classList.toggle('active', b.dataset.setLang === lang));
+        sections.forEach(s => s.classList.toggle('active', s.dataset.lang === lang));
+        document.documentElement.setAttribute('lang', lang);
+        try { localStorage.setItem('spark-privacy-lang', lang); } catch (e) { /* ignore */ }
+      }
+      buttons.forEach(b => b.addEventListener('click', () => setLang(b.dataset.setLang)));
+      let saved = null;
+      try { saved = localStorage.getItem('spark-privacy-lang'); } catch (e) { /* ignore */ }
+      const initial = saved || (navigator.language && navigator.language.toLowerCase().startsWith('tr') ? 'tr' : 'en');
+      setLang(initial);
+    })();
+  </script>
+</body>
+</html>
