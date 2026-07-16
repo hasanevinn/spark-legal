@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPARK — Data Deletion Request</title>
+  <meta name="description" content="How to request deletion of your data from SPARK by EvinWare. Steps for local data reset, ad ID reset, and contact.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0A0A1A;
+      --surface: #13132B;
+      --text: #E6E6F0;
+      --muted: #9394B5;
+      --accent: #00F0FF;
+      --link: #FF00AA;
+      --border: #26264A;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 40px 20px;
+    }
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 40px;
+    }
+    h1 {
+      color: var(--accent);
+      font-size: 32px;
+      margin: 0 0 8px;
+      letter-spacing: 1px;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 32px;
+    }
+    h2 {
+      color: var(--accent);
+      font-size: 22px;
+      margin: 40px 0 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 8px;
+    }
+    h3 {
+      color: var(--text);
+      font-size: 17px;
+      margin: 24px 0 8px;
+    }
+    p, li {
+      color: var(--text);
+      font-size: 15px;
+    }
+    ul, ol {
+      padding-left: 22px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    code {
+      background: rgba(0, 240, 255, 0.08);
+      color: var(--accent);
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      justify-content: flex-end;
+      margin-bottom: 16px;
+    }
+    .lang-switch button {
+      background: transparent;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      padding: 6px 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+    .lang-switch button.active {
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+    section[data-lang] {
+      display: none;
+    }
+    section[data-lang].active {
+      display: block;
+    }
+    .callout {
+      background: rgba(0, 240, 255, 0.06);
+      border-left: 3px solid var(--accent);
+      padding: 14px 18px;
+      border-radius: 6px;
+      margin: 24px 0;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="lang-switch">
+      <button type="button" data-set-lang="en" class="active">EN</button>
+      <button type="button" data-set-lang="tr">TR</button>
+    </div>
+
+    <!-- ENGLISH -->
+    <section data-lang="en" class="active">
+      <h1>Data Deletion Request</h1>
+      <p class="meta">Effective date: 2026-07-16 &middot; SPARK by EvinWare</p>
+
+      <p>
+        SPARK is designed to collect as little data as possible. We do not run
+        our own servers, we do not require an account, and we do not store your
+        personal information. Because of that, most data associated with SPARK
+        can be deleted directly from your device — without contacting us.
+      </p>
+
+      <div class="callout">
+        <strong>Summary:</strong> Uninstalling SPARK removes all locally stored
+        game data. To reset the advertising identifier, use your device's
+        privacy settings. For any residual request, email
+        <a href="mailto:info@evinware.com">info@evinware.com</a>.
+      </div>
+
+      <h2>1. What data exists?</h2>
+      <ul>
+        <li><strong>Local game progress</strong> — level completion, stars, best scores, audio/haptics preferences. Stored on your device via Capacitor Preferences (Android SharedPreferences). Never uploaded to our servers.</li>
+        <li><strong>Advertising ID</strong> — used by Google AdMob to serve ads. Managed by Android, not by us.</li>
+        <li><strong>Purchase records</strong> — the "Remove Ads" one-time purchase is stored by Google Play. RevenueCat receives an anonymous user ID and purchase receipt for entitlement validation.</li>
+      </ul>
+
+      <h2>2. How to delete your data</h2>
+
+      <h3>2.1 Delete local game data</h3>
+      <ol>
+        <li>Open SPARK &rarr; <em>Settings</em> &rarr; <em>Reset progress</em>. This clears all local save data on the current device.</li>
+        <li>Alternatively, uninstall SPARK. This removes <strong>all</strong> locally stored data (progress + preferences).</li>
+      </ol>
+
+      <h3>2.2 Reset your advertising identifier</h3>
+      <ol>
+        <li>Open Android <em>Settings</em> &rarr; <em>Privacy</em> &rarr; <em>Ads</em>.</li>
+        <li>Tap <em>Delete advertising ID</em> (or <em>Reset advertising ID</em> on older devices).</li>
+      </ol>
+      <p>This prevents AdMob and other ad networks from linking future ad requests to the previous identifier.</p>
+
+      <h3>2.3 Delete purchase records</h3>
+      <p>Purchase records are held by Google Play (and mirrored to RevenueCat for entitlement checks). To manage them:</p>
+      <ul>
+        <li>Open the <a href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">Google Play account page</a> to view purchase history.</li>
+        <li>Contact us at <a href="mailto:info@evinware.com">info@evinware.com</a> to request deletion of your anonymous RevenueCat identifier.</li>
+      </ul>
+
+      <h2>3. Contact request (optional)</h2>
+      <p>
+        If you want us to manually delete any data associated with your device — for
+        example, the anonymous RevenueCat identifier — email
+        <a href="mailto:info@evinware.com">info@evinware.com</a> with the subject
+        line <code>SPARK Data Deletion</code>. Please include:
+      </p>
+      <ul>
+        <li>The Google account email you used for in-app purchases (only if you want purchase-related identifiers deleted).</li>
+        <li>Approximate purchase date (helps us locate the record faster).</li>
+      </ul>
+      <p>We respond within 30 days.</p>
+
+      <h2>4. What we cannot delete</h2>
+      <ul>
+        <li>Google Play purchase records — retained by Google per their own policy.</li>
+        <li>Aggregated, anonymized analytics data used by AdMob at the platform level.</li>
+      </ul>
+      <p>See the <a href="privacy.html">SPARK Privacy Policy</a> for full details on what data is handled and by whom.</p>
+
+      <footer>
+        SPARK is developed by EvinWare (Hasan Evin). See also the
+        <a href="privacy.html">Privacy Policy</a>.
+      </footer>
+    </section>
+
+    <!-- TÜRKÇE -->
+    <section data-lang="tr">
+      <h1>Veri Silme Talebi</h1>
+      <p class="meta">Yürürlük tarihi: 16.07.2026 &middot; SPARK — EvinWare</p>
+
+      <p>
+        SPARK olabildiğince az veri toplayacak şekilde tasarlandı. Kendi
+        sunucularımızı işletmiyoruz, hesap açmanızı istemiyoruz ve kişisel
+        bilgilerinizi saklamıyoruz. Bu nedenle SPARK ile ilişkili verilerin
+        büyük bölümü, bizimle iletişime geçmeden doğrudan cihazınızdan
+        silinebilir.
+      </p>
+
+      <div class="callout">
+        <strong>Özet:</strong> SPARK'ı kaldırmak yerelde saklanan tüm oyun
+        verilerini siler. Reklam kimliğini sıfırlamak için cihazınızın gizlilik
+        ayarlarını kullanın. Kalan tüm talepler için
+        <a href="mailto:info@evinware.com">info@evinware.com</a> adresine yazın.
+      </div>
+
+      <h2>1. Hangi veriler var?</h2>
+      <ul>
+        <li><strong>Yerel oyun ilerlemesi</strong> — tamamlanan seviyeler, yıldızlar, en iyi skorlar, ses/dokunsal tercihler. Capacitor Preferences (Android SharedPreferences) ile yalnızca cihazınızda tutulur. Bizim sunucularımıza yüklenmez.</li>
+        <li><strong>Reklam kimliği</strong> — Google AdMob reklam sunumu için kullanır. Bizim değil, Android tarafından yönetilir.</li>
+        <li><strong>Satın alma kayıtları</strong> — "Reklamları Kaldır" tek seferlik satın alması Google Play tarafından saklanır. RevenueCat, entitlement doğrulama için anonim bir kullanıcı ID'si ve satın alma makbuzu alır.</li>
+      </ul>
+
+      <h2>2. Verilerinizi nasıl silebilirsiniz?</h2>
+
+      <h3>2.1 Yerel oyun verilerini silme</h3>
+      <ol>
+        <li>SPARK'ı açın &rarr; <em>Ayarlar</em> &rarr; <em>İlerlemeyi Sıfırla</em>. Bu, mevcut cihazdaki tüm yerel kayıt verilerini temizler.</li>
+        <li>Alternatif olarak SPARK'ı kaldırın. Bu, yerelde saklanan <strong>tüm</strong> verileri (ilerleme + tercihler) siler.</li>
+      </ol>
+
+      <h3>2.2 Reklam kimliğinizi sıfırlama</h3>
+      <ol>
+        <li>Android <em>Ayarlar</em> &rarr; <em>Gizlilik</em> &rarr; <em>Reklamlar</em>'ı açın.</li>
+        <li><em>Reklam kimliğini sil</em>'e dokunun (eski cihazlarda <em>Reklam kimliğini sıfırla</em> olabilir).</li>
+      </ol>
+      <p>Bu, AdMob ve diğer reklam ağlarının gelecekteki reklam isteklerini önceki kimliğe bağlamasını engeller.</p>
+
+      <h3>2.3 Satın alma kayıtlarını silme</h3>
+      <p>Satın alma kayıtları Google Play tarafından tutulur (ve entitlement kontrolü için RevenueCat'e yansıtılır). Yönetmek için:</p>
+      <ul>
+        <li>Satın alma geçmişini görmek için <a href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">Google Play hesap sayfasını</a> açın.</li>
+        <li>Anonim RevenueCat kimliğinizin silinmesini istemek için <a href="mailto:info@evinware.com">info@evinware.com</a> adresine yazın.</li>
+      </ul>
+
+      <h2>3. İletişim talebi (opsiyonel)</h2>
+      <p>
+        Cihazınızla ilişkili herhangi bir verinin manuel olarak silinmesini
+        istiyorsanız (örneğin anonim RevenueCat kimliği),
+        <a href="mailto:info@evinware.com">info@evinware.com</a> adresine
+        <code>SPARK Veri Silme</code> başlıklı bir e-posta yazın. Lütfen şunları
+        ekleyin:
+      </p>
+      <ul>
+        <li>Uygulama içi satın almalarda kullandığınız Google hesap e-postası (yalnızca satın almayla ilgili kimliklerin silinmesini istiyorsanız).</li>
+        <li>Yaklaşık satın alma tarihi (kaydı daha hızlı bulmamızı sağlar).</li>
+      </ul>
+      <p>30 gün içinde yanıt veriyoruz.</p>
+
+      <h2>4. Silemediğimiz şeyler</h2>
+      <ul>
+        <li>Google Play satın alma kayıtları — Google kendi politikası gereği tutar.</li>
+        <li>AdMob'un platform düzeyinde kullandığı toplu, anonimleştirilmiş analiz verileri.</li>
+      </ul>
+      <p>Hangi verilerin kim tarafından işlendiğine dair tüm ayrıntılar için <a href="privacy.html">SPARK Gizlilik Politikası</a>'na bakın.</p>
+
+      <footer>
+        SPARK, EvinWare (Hasan Evin) tarafından geliştirilir.
+        <a href="privacy.html">Gizlilik Politikası</a>'na da bakabilirsiniz.
+      </footer>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      var buttons = document.querySelectorAll('[data-set-lang]');
+      var sections = document.querySelectorAll('section[data-lang]');
+      var saved = null;
+      try { saved = localStorage.getItem('spark-legal-lang'); } catch (e) {}
+      var navLang = (navigator.language || 'en').slice(0, 2).toLowerCase();
+      var initial = saved || (navLang === 'tr' ? 'tr' : 'en');
+      apply(initial);
+      buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var lang = btn.getAttribute('data-set-lang');
+          apply(lang);
+          try { localStorage.setItem('spark-legal-lang', lang); } catch (e) {}
+        });
+      });
+      function apply(lang) {
+        buttons.forEach(function (b) {
+          b.classList.toggle('active', b.getAttribute('data-set-lang') === lang);
+        });
+        sections.forEach(function (s) {
+          s.classList.toggle('active', s.getAttribute('data-lang') === lang);
+        });
+        document.documentElement.setAttribute('lang', lang);
+      }
+    })();
+  </script>
+</body>
+</html>
